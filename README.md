@@ -1,18 +1,10 @@
-# Field Notes
+# Personal website
 
-A minimal static blog about AI, technology, and making things.
+https://chiragbiswas.github.io
 
-Website: https://chiragbiswas.github.io
+A blank static site with minimal typography, spacing, and color styles.
 
-## Editing
+Add content inside `main` in `index.html`. Edit the design in `style.css`.
+Changes pushed to `main` publish automatically through GitHub Pages.
 
-- Edit posts and page text in `app.js`.
-- Edit colors, typography, and layout in `style.css`.
-- Edit the page shell and metadata in `index.html`.
-
-Commits pushed to `main` are published automatically by GitHub Pages.
-The current essays and blog name are sample content.
-
-## Local preview
-
-Run `python3 -m http.server 8000` in this folder, then visit http://localhost:8000.
+To preview locally, run `python3 -m http.server 8000` and open http://localhost:8000.
