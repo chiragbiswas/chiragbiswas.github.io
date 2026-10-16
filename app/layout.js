@@ -1,4 +1,17 @@
+import localFont from 'next/font/local';
 import './globals.css';
+
+const garamond = localFont({
+  src: [
+    { path: '../public/assets/fonts/eb-garamond.ttf', weight: '400 800', style: 'normal' },
+    { path: '../public/assets/fonts/eb-garamond-italic.ttf', weight: '400 800', style: 'italic' },
+  ],
+  variable: '--font-garamond',
+  display: 'swap',
+  preload: true,
+  adjustFontFallback: 'Times New Roman',
+  fallback: ['Georgia', 'serif'],
+});
 
 export const metadata = {
   metadataBase: new URL('https://multiphonics.xyz'),
@@ -14,7 +27,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en" className={garamond.variable}>
       <body>
         <a className="skip" href="#main">Skip to content</a>
         {children}
