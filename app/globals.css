@@ -36,7 +36,7 @@ a:focus-visible { outline: 2px solid #687465; outline-offset: 6px; }
 
 header {
   min-height: 78px;
-  padding: 28px 42px;
+  padding: 20px 24px 20px 10px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -44,8 +44,8 @@ header {
 }
 
 .wordmark {
-  font-size: 16px;
-  letter-spacing: 1.5px;
+  font-size: 32px;
+  letter-spacing: 2px;
   text-decoration: none;
   color: #646762;
 }
@@ -67,10 +67,23 @@ h1 {
 .skip:focus { top: 10px; }
 
 @media (max-width: 600px) {
-  header { padding: 24px; }
+  header { padding: 20px 16px; }
   nav { gap: 22px; }
-  .wordmark { font-size: 14px; letter-spacing: 1px; }
+  .wordmark { font-size: 24px; letter-spacing: 1px; }
   h1 { font-size: 35px; }
 }
 
 button, input, textarea, select { font: inherit; }
+
+.writing-page {
+  max-width: none;
+  min-height: 70vh;
+  margin: 0;
+  padding: clamp(120px, 28vh, 300px) 24px 80px;
+  text-align: center;
+}
+
+.writing-page h1 {
+  font-size: clamp(56px, 8vw, 80px);
+  line-height: 1.1;
+}

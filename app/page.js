@@ -6,8 +6,8 @@ export default async function BlogPage() {
   return (
     <>
       <Header page="blog" />
-      <main id="main" tabIndex={-1}>
-        <h1>Multiphonics</h1>
+      <main id="main" className="writing-page" tabIndex={-1}>
+        <h1>Writing</h1>
       </main>
     </>
   );
