@@ -72,3 +72,17 @@ h1 {
   .wordmark { font-size: 14px; letter-spacing: 1px; }
   h1 { font-size: 35px; }
 }
+
+.title-image {
+  display: block;
+  width: auto;
+  height: 0.96em;
+  max-width: 100%;
+  object-fit: contain;
+  object-position: left;
+}
+
+.wordmark { font-size: 22px; }
+@media (max-width: 600px) {
+  .wordmark { font-size: 20px; }
+}
