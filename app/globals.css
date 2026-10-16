@@ -74,16 +74,3 @@ h1 {
 }
 
 button, input, textarea, select { font: inherit; }
-
-.writing-page {
-  max-width: none;
-  min-height: 70vh;
-  margin: 0;
-  padding: clamp(120px, 28vh, 300px) 24px 80px;
-  text-align: center;
-}
-
-.writing-page h1 {
-  font-size: clamp(56px, 8vw, 80px);
-  line-height: 1.1;
-}
