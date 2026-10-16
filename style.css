@@ -1,3 +1,19 @@
+@font-face {
+  font-family: "EB Garamond";
+  src: url("assets/fonts/eb-garamond.ttf") format("truetype");
+  font-weight: 400 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "EB Garamond";
+  src: url("assets/fonts/eb-garamond-italic.ttf") format("truetype");
+  font-weight: 400 800;
+  font-style: italic;
+  font-display: swap;
+}
+
 :root {
   --ink: #30312f;
   --muted: #858681;
@@ -11,7 +27,7 @@ body {
   margin: 0;
   background: var(--paper);
   color: var(--ink);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "EB Garamond", Garamond, Georgia, serif;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -23,7 +39,7 @@ main {
 }
 
 h1, h2, h3 {
-  font-family: Georgia, 'Times New Roman', serif;
+  font-family: inherit;
   font-weight: 400;
 }
 
@@ -50,16 +66,16 @@ header {
   color: #646762;
 }
 
-nav { display: flex; gap: 30px; margin-left: auto; font-size: 14px; }
+nav { display: flex; gap: 30px; margin-left: auto; font-size: 18px; }
 nav a { color: #747670; text-decoration: none; }
 nav a:hover, nav a[aria-current="page"] { color: var(--ink); }
 nav a:hover { text-decoration: underline; }
 
 h1 {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "EB Garamond", Garamond, Georgia, serif;
   font-size: 40px;
   line-height: 1.15;
-  letter-spacing: -1.3px;
+  letter-spacing: -0.5px;
   margin: 0;
 }
 
@@ -73,16 +89,4 @@ h1 {
   h1 { font-size: 35px; }
 }
 
-.title-image {
-  display: block;
-  width: auto;
-  height: 0.96em;
-  max-width: 100%;
-  object-fit: contain;
-  object-position: left;
-}
-
-.wordmark { font-size: 22px; }
-@media (max-width: 600px) {
-  .wordmark { font-size: 20px; }
-}
+button, input, textarea, select { font: inherit; }
