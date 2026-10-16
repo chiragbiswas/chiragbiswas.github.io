@@ -33,3 +33,42 @@ a:focus-visible { outline: 2px solid #687465; outline-offset: 6px; }
 @media (max-width: 600px) {
   main { margin: 60px auto 70px; padding: 0 24px; }
 }
+
+header {
+  min-height: 78px;
+  padding: 28px 42px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.wordmark {
+  font-size: 16px;
+  letter-spacing: 1.5px;
+  text-decoration: none;
+  color: #646762;
+}
+
+nav { display: flex; gap: 30px; margin-left: auto; font-size: 14px; }
+nav a { color: #747670; text-decoration: none; }
+nav a:hover, nav a[aria-current="page"] { color: var(--ink); }
+nav a:hover { text-decoration: underline; }
+
+h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 40px;
+  line-height: 1.15;
+  letter-spacing: -1.3px;
+  margin: 0;
+}
+
+.skip { position: absolute; top: -80px; left: 20px; padding: 12px; background: var(--paper); }
+.skip:focus { top: 10px; }
+
+@media (max-width: 600px) {
+  header { padding: 24px; }
+  nav { gap: 22px; }
+  .wordmark { font-size: 14px; letter-spacing: 1px; }
+  h1 { font-size: 35px; }
+}

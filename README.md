@@ -1,10 +1,13 @@
-# Personal website
+# Multiphonics
 
 https://chiragbiswas.github.io
 
-A blank static site with minimal typography, spacing, and color styles.
+A minimal personal blog. The home page and About page intentionally contain only headings until content is added.
 
-Add content inside `main` in `index.html`. Edit the design in `style.css`.
+- `index.html`: blog home
+- `about.html`: About page
+- `style.css`: shared design
+
 Changes pushed to `main` publish automatically through GitHub Pages.
 
 To preview locally, run `python3 -m http.server 8000` and open http://localhost:8000.
